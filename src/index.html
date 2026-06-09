@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+
+    <title>Keyboard-DRUM</title>
+</head>
+<body>
+    <header class="header-logo"></header>
+    <main class="main-home">
+        <section class="drum">
+            <div class="keyq">Q</div>
+            <div class="keyw">W</div>
+            <div class="keye">E</div>
+
+            <div class="keya">A</div>
+            <div class="keys">S</div>
+            <div class="keyd">D</div>
+
+            <div class="keyz">Z</div>
+            <div class="keyx">X</div>
+            <div class="keyc">C</div>
+
+            <div class="composer">
+                <label for="input">Composer
+                    <input type="text" id="input">
+                    <button>play something</button>
+                </label>
+                
+            </div>
+        </section>
+        <footer class="Roadpay" >
+
+        </footer>
+    </main>
+    <button id="btn-q">Tocar Som Q</button>
+
+    <audio id="s_keyq" src="./sounds/keyq.wav"></audio>
+    <audio id="s_keyw" src="./sounds/keyw.wav"></audio>
+    <audio id="s_keye" src="./sounds/keye.wav"></audio>
+    <audio id="s_keya" src="./sounds/keya.wav"></audio>
+    <audio id="s_keys" src="./sounds/keys.wav"></audio>
+    <audio id="s_keyd" src="./sounds/keyd.wav"></audio>
+    <audio id="s_keyz" src="./sounds/keyz.wav"></audio>
+    <audio id="s_keyx" src="./sounds/keyx.wav"></audio>
+    <audio id="s_keyc" src="./sounds/keyc.wav"></audio>
+    
+    <script src="script.js"></script>
+
+    <script>
+    const audio = document.getElementById("s_keyq");
+    const botao = document.getElementById("btn-q");
+
+    botao.addEventListener("click", () => {
+        audio.currentTime = 0; // volta para o início
+        audio.play();
+    });
+</script>
+</body>
+</html>

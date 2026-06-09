@@ -1,0 +1,7 @@
+# extension
+.vscode/
+.idea/
+.theia/
+.eclipse/
+.netbeans/
+.codium/
