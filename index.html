@@ -5,37 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
 
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+
+
     <title>Keyboard-DRUM</title>
 </head>
 <body>
-    <header class="header-logo"></header>
+    <header id="header-logo">
+        <h1 id="cabecalho-capa">digital acoustic drum kit</h1>
+    </header>
+
     <main class="main-home">
         <section class="drum">
-            <div class="keyq">Q</div>
-            <div class="keyw">W</div>
-            <div class="keye">E</div>
+            <div data-key="keyq" class="key">Q</div>
+            <div data-key="keyw" class="key">W</div>
+            <div data-key="keye" class="key">E</div>
 
-            <div class="keya">A</div>
-            <div class="keys">S</div>
-            <div class="keyd">D</div>
+            <div data-key="keya" class="key">A</div>
+            <div data-key="keys" class="key">S</div>
+            <div data-key="keyd" class="key">D</div>
 
-            <div class="keyz">Z</div>
-            <div class="keyx">X</div>
-            <div class="keyc">C</div>
+            <div data-key="keyz" class="key">Z</div>
+            <div data-key="keyx" class="key">X</div>
+            <div data-key="keyc" class="key">C</div>
 
             <div class="composer">
-                <label for="input">Composer
-                    <input type="text" id="input">
-                    <button>play something</button>
-                </label>
-                
+                <label for="input">Composer</label>
+
+                <input type="text" id="input" placeholder="Faça uma composição...">
+
+                <button>Play something</button>
             </div>
         </section>
-        <footer class="Roadpay" >
-
+        <footer class="footer">
+            <p>
+                Developed by HighWeb © 2026 |
+                <a href="https://github.com/highwebapi/keyboard-drum-kit" target="_blank">
+                    View on GitHub - keyboard-drum-kit
+                </a>
+            </p>
         </footer>
     </main>
-    <button id="btn-q">Tocar Som Q</button>
 
     <audio id="s_keyq" src="src/sounds/keyq.wav"></audio>
     <audio id="s_keyw" src="src/sounds/keyw.wav"></audio>
@@ -46,17 +57,8 @@
     <audio id="s_keyz" src="src/sounds/keyz.wav"></audio>
     <audio id="s_keyx" src="src/sounds/keyx.wav"></audio>
     <audio id="s_keyc" src="src/sounds/keyc.wav"></audio>
+
+    <script src="./src/js/script.js"></script>
     
-    <script src="script.js"></script>
-
-    <script>
-    const audio = document.getElementById("s_keyq");
-    const botao = document.getElementById("btn-q");
-
-    botao.addEventListener("click", () => {
-        audio.currentTime = 0; // volta para o início
-        audio.play();
-    });
-</script>
 </body>
 </html>
