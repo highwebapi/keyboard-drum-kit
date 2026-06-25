@@ -1,0 +1,113 @@
+#header-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* centraliza verticalmente */
+    margin-bottom: 20px;     /* distância para o main */
+    margin-top: 60px;
+}
+
+#header-logo h1 {
+    text-transform: uppercase;
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+}
+
+
+
+.drum {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* colunas do mesmo tamanho das .key */
+    gap: 10px;
+    justify-content: center; /* centraliza o grid horizontalmente */
+    color: #FFF;
+    padding: 20px;
+    margin: 0 auto; /* reforço para centralização */
+}
+
+.key {
+    width: 100px;
+    height: 100px;
+    border-radius: 7px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.key.active {
+    border: 2px solid #FF0;
+    color: #FF0;
+}
+
+.composer {
+    width: 340px;
+    padding: 5px;
+    margin: auto; /* centraliza horizontalmente*/
+    color: #FFF;
+}
+
+.composer label {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.composer #input {
+    width: 100%;
+    margin-top: 20px;
+    outline: none;
+    font-size: 20px;
+    padding: 10px 15px;
+}
+.composer button {
+    width: 80%;
+    height: 40px;
+    margin: 20px auto 0 auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: none;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.composer button:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.footer {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.key:hover{
+    background-color: rgba(0, 0, 0, 0.768);
+}
+
